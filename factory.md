@@ -4,7 +4,7 @@
 We need to create objects without having to specify the exact class of the object that will be created.
 
 ## Solution
-Basically create a *Factory class* that has a hash for all concerned object classes. and a *factory method* that takes two arguments class name and class attributes. 
+Basically create a **Factory class** that has a hash for all concerned object classes. and a **factory method** that takes two arguments class name and class attributes. 
 
 ```ruby
 class A
@@ -37,4 +37,5 @@ instance_of_a = Factory.factory_method(:a, { name: 'test' })
 puts instance_of_a.is_a?(A) # true
 puts instance_of_a.is_a?(B) # false
 puts instance_of_a.is_a?(C) # false
+
 ```
